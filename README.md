@@ -31,10 +31,10 @@ Initial tests confirmed that the system had full network connectivity and proper
 
 
 - DNS Resolution (Working)
-![DNS Working](images/DNS-resolution.png)
+<img src="images/DNS-resolution.png" width="500">
 
 - Traceroute Output (Working)
-![Traceroute Working](images/Traceroute-output.png)
+<img src="images/Traceroute-output.png" width="1300">
 
 
 ## ❌ DNS Failure Scenario
@@ -46,10 +46,10 @@ This caused all domain-based network requests to fail due to the inability to re
 ### Observed Behavior
 
 - ping google.com failed with DNS resolution error
-![DNS Failure - ping](images/Ping-fail.png)
+<img src="images/Ping-fail.png" width="500">
 
 - nslookup google.com returned no results
-![DNS Failure - nslookup](images/nslookup-fail.png)
+<img src="images/nslookup-fail.png" width="500">
 
 - System unable to resolve domain names
 
