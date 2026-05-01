@@ -54,6 +54,24 @@ This caused all domain-based network requests to fail due to the inability to re
 
 ## 🔍 Troubleshooting Steps
 
+To isolate the issue, multiple tests were performed:
+
+1. Tested domain connectivity:
+   - `ping google.com` failed, indicating possible DNS issue
+
+2. Tested direct IP connectivity:
+   - `ping 8.8.8.8` succeeded, confirming network connectivity was functional
+
+![IP Connectivity Test](IP-Connectivity-Test.png)
+
+3. Tested DNS resolution:
+   - `nslookup google.com` failed, confirming DNS resolution issue
+
+4. Reviewed resolver configuration:
+   - Identified incorrect nameserver entry in `/etc/resolv.conf`
+
+These steps confirmed that the issue was isolated to DNS and not a broader network failure.
+
 ## 🛠️ Resolution
 
 ## 💡 Key Takeaways
