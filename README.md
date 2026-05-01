@@ -89,3 +89,9 @@ The issue was resolved by restoring the correct DNS resolver configuration.
 Additionally, it was observed that AWS automatically restores DNS settings via DHCP, reinforcing the importance of understanding cloud-managed networking behavior.
 
 ## 💡 Key Takeaways
+
+- DNS failures can disrupt connectivity even when underlying network access is functional
+- Verifying IP connectivity helps isolate DNS-related issues quickly
+- Tools such as ping, nslookup, and traceroute are essential for network troubleshooting
+- Reviewing system configuration files like `/etc/resolv.conf` is critical when diagnosing resolution issues
+- Cloud environments such as AWS may automatically manage and restore network configurations via DHCP
