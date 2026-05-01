@@ -34,7 +34,7 @@ Initial tests confirmed that the system had full network connectivity and proper
 <img src="images/DNS-resolution.png" width="500">
 
 - Traceroute Output (Working)
-<img src="images/Traceroute-output.png" width="1300">
+<img src="images/Traceroute-output.png" width="1500">
 
 
 ## ❌ DNS Failure Scenario
