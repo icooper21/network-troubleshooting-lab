@@ -1,4 +1,5 @@
 # 🌐 Network Troubleshooting Lab (Packet-Level)
+A hands-on lab demonstrating real-world network troubleshooting by diagnosing and resolving DNS failures in an AWS environment.
 
 ## 🧭 Overview
 This lab demonstrates packet-level network troubleshooting by simulating and resolving a DNS failure on an AWS EC2 instance.
