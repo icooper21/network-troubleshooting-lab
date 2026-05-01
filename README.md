@@ -26,8 +26,15 @@ Initial tests confirmed that the system had full network connectivity and proper
 ### Screenshots
 
 - Ping Test (Working)
+![Ping Working](Ping-Success.png)
+
+
 - DNS Resolution (Working)
+![DNS Working](DNS-resolution.png)
+
 - Traceroute Output (Working)
+![Traceroute Working](Traceroute-output.png)
+
 
 ## ❌ DNS Failure Scenario
 
