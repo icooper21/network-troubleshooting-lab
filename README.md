@@ -17,6 +17,17 @@ This project highlights practical troubleshooting techniques used in real-world 
 - VPC Networking (AWS-managed DNS)
 
 ## ✅ Baseline Connectivity (Working State)
+Initial tests confirmed that the system had full network connectivity and proper DNS resolution.
+
+- Successfully pinged external domain (google.com)
+- DNS queries resolved correctly using nslookup
+- Traceroute showed multiple network hops to the destination
+
+### Screenshots
+
+- Ping Test (Working)
+- DNS Resolution (Working)
+- Traceroute Output (Working)
 
 ## ❌ DNS Failure Scenario
 
