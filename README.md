@@ -74,4 +74,18 @@ These steps confirmed that the issue was isolated to DNS and not a broader netwo
 
 ## 🛠️ Resolution
 
+The issue was resolved by restoring the correct DNS resolver configuration.
+
+- Updated `/etc/resolv.conf` to use the default AWS DNS server:
+  - `nameserver 172.31.0.2`
+
+- After correction:
+  - DNS resolution was restored
+![DNS Restored](DNS-restored.png)
+
+  - Domain-based connectivity (ping google.com) succeeded
+![Ping Restored](ping-restored.png)
+
+Additionally, it was observed that AWS automatically restores DNS settings via DHCP, reinforcing the importance of understanding cloud-managed networking behavior.
+
 ## 💡 Key Takeaways
