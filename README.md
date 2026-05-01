@@ -85,7 +85,7 @@ The issue was resolved by restoring the correct DNS resolver configuration.
 <img src="images/DNS-restored.png" width="500">
 
   - Domain-based connectivity (ping google.com) succeeded
-<img src="images/ping-restored.png" width="500">
+<img src="images/ping-restored.png" width="900">
 
 Additionally, it was observed that AWS automatically restores DNS settings via DHCP, reinforcing the importance of understanding cloud-managed networking behavior.
 
