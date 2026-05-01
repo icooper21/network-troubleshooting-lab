@@ -27,14 +27,14 @@ Initial tests confirmed that the system had full network connectivity and proper
 ### Screenshots
 
 - Ping Test (Working)
-![Ping Working](Ping-Success.png)
+![Ping Working](images/Ping-Success.png)
 
 
 - DNS Resolution (Working)
-![DNS Working](DNS-resolution.png)
+![DNS Working](images/DNS-resolution.png)
 
 - Traceroute Output (Working)
-![Traceroute Working](Traceroute-output.png)
+![Traceroute Working](images/Traceroute-output.png)
 
 
 ## ❌ DNS Failure Scenario
@@ -46,10 +46,10 @@ This caused all domain-based network requests to fail due to the inability to re
 ### Observed Behavior
 
 - ping google.com failed with DNS resolution error
-![DNS Failure - ping](Ping-fail.png)
+![DNS Failure - ping](images/Ping-fail.png)
 
 - nslookup google.com returned no results
-![DNS Failure - nslookup](nslookup-fail.png)
+![DNS Failure - nslookup](images/nslookup-fail.png)
 
 - System unable to resolve domain names
 
@@ -63,7 +63,7 @@ To isolate the issue, multiple tests were performed:
 2. Tested direct IP connectivity:
    - `ping 8.8.8.8` succeeded, confirming network connectivity was functional
 
-![IP Connectivity Test](IP-Connectivity-Test.png)
+![IP Connectivity Test](images/IP-Connectivity-Test.png)
 
 3. Tested DNS resolution:
    - `nslookup google.com` failed, confirming DNS resolution issue
@@ -82,10 +82,10 @@ The issue was resolved by restoring the correct DNS resolver configuration.
 
 - After correction:
   - DNS resolution was restored
-![DNS Restored](DNS-restored.png)
+![DNS Restored](images/DNS-restored.png)
 
   - Domain-based connectivity (ping google.com) succeeded
-![Ping Restored](ping-restored.png)
+![Ping Restored](images/ping-restored.png)
 
 Additionally, it was observed that AWS automatically restores DNS settings via DHCP, reinforcing the importance of understanding cloud-managed networking behavior.
 
