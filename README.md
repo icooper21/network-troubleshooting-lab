@@ -49,7 +49,7 @@ This caused all domain-based network requests to fail due to the inability to re
 ### Observed Behavior
 
 - ping google.com failed with DNS resolution error
-<img src="images/Ping-fail.png" width="500">
+<img src="images/Ping-fail2.png" width="500">
 
 
 
