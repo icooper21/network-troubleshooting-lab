@@ -63,7 +63,7 @@ To isolate the issue, multiple tests were performed:
 2. Tested direct IP connectivity:
    - `ping 8.8.8.8` succeeded, confirming network connectivity was functional
 
-![IP Connectivity Test](images/IP-Connectivity-Test.png)
+<img src="images/IP-Connectivity-Test.png" width="700">
 
 3. Tested DNS resolution:
    - `nslookup google.com` failed, confirming DNS resolution issue
@@ -82,10 +82,10 @@ The issue was resolved by restoring the correct DNS resolver configuration.
 
 - After correction:
   - DNS resolution was restored
-![DNS Restored](images/DNS-restored.png)
+<img src="images/DNS-restored.png" width="500">
 
   - Domain-based connectivity (ping google.com) succeeded
-![Ping Restored](images/ping-restored.png)
+<img src="images/ping-restored.png" width="500">
 
 Additionally, it was observed that AWS automatically restores DNS settings via DHCP, reinforcing the importance of understanding cloud-managed networking behavior.
 
